@@ -1,0 +1,19 @@
+@font-face { font-family: 'NEXON Lv2 Gothic Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+ul{
+    list-style: none;
+}
+
+.header-title{
+    /*border:1px solid #F00;*/
+    color:#555;
+    font:2em NEXON Lv2 Gothic Bold;
+}
+.top-navi li{
+    float:left;
+    border:1px solid #777;
+}
+.top-navi a{
+    color:#CCC;
+    text-decoration:none;
+}
