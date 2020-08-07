@@ -26,17 +26,17 @@
     <title>천주교수원교구 영성교육원</title>
 </HEAD>
 <BODY>
-    <div class="container-fluid" style="border:1px solid;padding:0px;">
-        <div class="row no-gutters" style="border:1px solid;">
-            <div class="col-3">
+    <div class="container-fluid">
+        <div class="row mr-md-5 ml-md-5 mr-sm-3 ml-sm-3">
+            <div class="col-6 col-sm-3" style="line-height:60px;">
                 <a href="./index.php">
-                    <img style="width:100%; max-width:200px;" src="./images/img_logo.png" alt="천주교수원교구">
+                    <img style="width:100%; max-width:200px;vertical-align:middle;" src="./images/img_logo.png" alt="천주교수원교구">
                 </a>
             </div>
             <div class="col-6 text-center">
                 <h1 class="header-title">영성교육원</h1>
             </div>
-            <div class="col-3">
-
-            </div>
+            <div class="d-none d-sm-block col-sm-3 text-right" style="line-height:60px;white-space:nowrap;">
+                <a style="vertical-align:middle;word-break: keep-all;">로그인 | 회원가입</a>
+            </div>            
         </div>

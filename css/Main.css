@@ -1,19 +1,107 @@
-@font-face { font-family: 'NEXON Lv2 Gothic Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
-
+@font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Eoe_Zno_L'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff'); font-weight: normal; font-style: normal; }
+html *{
+    padding:0;
+    margin:0;
+}
+h1, h2, h3, h4, h5{
+    font-family:paybooc-Bold;
+}
 ul{
     list-style: none;
 }
-
+.container-fluid{
+    padding:0;
+}
 .header-title{
     /*border:1px solid #F00;*/
     color:#555;
-    font:2em NEXON Lv2 Gothic Bold;
+    font:2em paybooc-Bold;
+    padding:10px 0;
+    white-space: nowrap;
+}
+@media (min-width: 576px) {
+    .sub-navi:nth-child(3){
+        padding-left:100px;
+    }
+    .sub-navi:nth-child(4){
+        padding-left:200px;
+    }
+    .sub-navi:nth-child(5){
+        padding-left:300px;
+    }
+    .sub-navi:nth-child(6){
+        padding-left:400px;
+    }
+}
+@media (min-width: 992px) {
+    .top-navi{
+        padding:0 200px;
+    }
+    .sub-navi:nth-child(3){
+        padding-left:200px;
+    }
+    .sub-navi:nth-child(4){
+        padding-left:300px;
+    }
+    .sub-navi:nth-child(5){
+        padding-left:400px;
+    }
+    .sub-navi:nth-child(6){
+        padding-left:500px;
+    }
+}
+@media (min-width: 1200px) {
+    .top-navi{
+        padding:0 350px;
+    }
+    .sub-navi:nth-child(3){
+        padding-left:400px;
+    }
+    .sub-navi:nth-child(4){
+        padding-left:500px;
+    }
+    .sub-navi:nth-child(5){
+        padding-left:600px;
+    }
+    .sub-navi:nth-child(6){
+        padding-left:700px;
+    }
 }
 .top-navi li{
     float:left;
-    border:1px solid #777;
+    height:60px;
+    width:25%;
+    text-align:center;
+    word-break: keep-all;
 }
 .top-navi a{
-    color:#CCC;
+    display: block;
+    width:100%;
+    height:100%;
     text-decoration:none;
+}
+
+.top-navi a p{
+    position: relative;
+    top:50%;
+    transform: translate(0, -50%);
+    font:1.1em paybooc-Bold;
+}
+.sub-navi{
+    border-bottom:1px solid #999;
+    display: none;
+}
+.sub-navi li{
+    float:left;
+}
+.sub-navi a{
+    display: block;
+    text-decoration:none;
+}
+
+.sub-navi a p{
+    color:#999;
+    padding:10px 20px;
+    font:0.9em Eoe_Zno_L;
 }

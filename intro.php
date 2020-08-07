@@ -1,11 +1,14 @@
 <?php require_once './component/header.php'; ?>
 <?php require_once './component/navi.php'; ?>
-<ul>
-    <li>영성교육원 소개</li>
-    <li>인사말</li>
-    <li>오시는길</li>
-    <li>API지도</li>
-    <li>버스로 오시는 길</li>
-    <li>승용차로 오시는 길</li>
-</ul>
+<div class="contents-body" style="max-width:1200px; margin:0 auto;border:1px solid #999; min-height:400px;">
+<?php
+    if($_REQUEST["sub"]=='intro02'){
+        require_once './component/intro02.php';
+    }else if($_REQUEST["sub"]=='intro03'){
+        require_once './component/intro03.php';
+    }else{
+        require_once './component/intro01.php';
+    }
+?>
+</div>
 <?php require_once './component/footer.php';?>
